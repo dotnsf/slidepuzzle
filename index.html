@@ -33,13 +33,13 @@ function readDrawImg( reader, x, y ){
   img.onload = function(){
     var w = img.width;
     var h = img.height;
-    /*
-    $('#slidegame_img').prop( 'width', w );
-    $('#slidegame_img').prop( 'height', h );
+    $('#slidegame_img').prop( 'src', img.src );
+    $('#slidegame_img').prop( 'width', '600' );
+    //h = parseInt( 600 * h / w );
+    //$('#slidegame_img').prop( 'height', '' + h );
 
     var t = $('img.jqPuzzle');
     t.jqPuzzle( slide_settings, slide_texts );
-    */
   };
 }
 
@@ -47,11 +47,6 @@ function readImg( reader ){
   var result_dataURL = reader.result;
   var img = new Image();
   img.src = result_dataURL;
-  $('#slidegame_img').prop( 'src', result_dataURL );
-  $('#slidegame_img').prop( 'width', '90%' );
-  $('#slidegame_img').prop( 'height', '90%' );
-  var t = $('img.jqPuzzle');
-  t.jqPuzzle( slide_settings, slide_texts );
 
   return img;
 }
@@ -72,6 +67,10 @@ label{
   padding: 10px;
   border: double 4px #aaa;
 }
+#slidegame_img{
+  max-width: 100%;
+  height: auto;
+}
 </style>
 </head>
 <body>
@@ -82,7 +81,7 @@ label{
     <input type="file" id="imagefile"/>
   </label>
   <br/>
-  <img id="slidegame_img" class="jqPuzzle" src=""/>
+  <img id="slidegame_img" class="jqPuzzle" />
 </div>
 
 <script>
