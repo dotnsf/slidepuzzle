@@ -14,6 +14,8 @@ https://dotnsf.github.io/slizepuzzle/
 
 ## Licensing
 
+This game use [jqPuzzle](http://www.2meter3.de/jqPuzzle/).
+
 This code is licensed under MIT.
 
 
