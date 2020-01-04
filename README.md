@@ -1,5 +1,14 @@
 # slidepuzzle
 
+## Overview
+
+'Good-old-days' slidepuzzle with your personal image.
+
+
+## Working demo
+
+https://dotnsf.github.io/slizepuzzle/
+
 
 ## Licensing
 
