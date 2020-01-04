@@ -9,7 +9,7 @@ You can click(touch) camera icon, and choose your favorite image(or take a pictu
 
 ## Working demo
 
-https://dotnsf.github.io/slizepuzzle/
+https://dotnsf.github.io/slidepuzzle/
 
 
 ## Licensing
